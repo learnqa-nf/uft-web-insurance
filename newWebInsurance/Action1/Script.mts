@@ -9,7 +9,7 @@ For i = 1 To DataTable.GetSheet("Login").GetRowCount
 	Browser("InsuranceWeb: Home").Page("InsuranceWeb: Home_2").Sync
 	Browser("InsuranceWeb: Home").Page("InsuranceWeb: Home_2").Image("details").Click
 	Browser("InsuranceWeb: Home").Page("InsuranceWeb: Account").Sync @@ script infofile_;_ZIP::ssf6.xml_;_
-	Browser("InsuranceWeb: Home").Page("InsuranceWeb: Account").WebElement("fnameObj").WaitProperty "visible", True, 5000 ' using Synch point
+	Browser("InsuranceWeb: Home").Page("InsuranceWeb: Account").WebElement("fnameObj").WaitProperty "visible", True, 5000 ' using Synch pointt
 	fullname = fullname + Browser("InsuranceWeb: Home").Page("InsuranceWeb: Account").WebElement("fnameObj").GetROProperty("outertext") + varComa + varSparator ' collect data
 	
 	Browser("InsuranceWeb: Home").Page("InsuranceWeb: Account").Link("Home").Click
